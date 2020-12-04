@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" content="width=device-width,minimum-scale=1,maximum-scale=1" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="theme-color" content="#0dbdca">
+    <title>Connect Four</title>
+    <style>
+    @font-face {
+        font-family: "myFirNEXA_BOLD";
+        src: url('./assets/fonts/NEXA_BOLD.OTF');
+    }
+    .dummy{
+        position: absolute;
+        z-index: -1;
+        opacity:0;
+        top:0;
+        left:0;
+    }
+    .dummy p:nth-child(1){
+        font-family: "myFirNEXA_BOLD";
+    }
+    #rotate.active{
+            display: block;
+        }
+        #rotate{
+            display: none;
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background-color: #000000;
+            z-index:1000;
+        }
+        #rotate img{
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            width:10%;
+            max-width: 300px;
+        }
+        @media screen and (max-width: 768px){
+         
+         #rotate img{
+             width:30% !important;
+         }
+     }
+    </style>
+</head>
+<body>
+<noscript>
+    You need to enable JavaScript to run this app.
+</noscript>
+
+</div>
+<div class="dummy">
+    <p>H</p>
+</div>
+<div id="game-sec">
+    <div id="rotate">
+        <img src="./assets/tilt.png" alt="" srcset="">
+    </div>
+</div>
+</body>
+
+</html>
